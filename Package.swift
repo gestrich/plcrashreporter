@@ -3,18 +3,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "PLCrashReporter",
+    name: "PLAcmeCoCrashReporter",
     platforms: [
         .iOS(.v9),
         .macOS(.v10_10),
         .tvOS(.v9)
     ],
     products: [
-        .library(name: "CrashReporter", targets: ["CrashReporter"])
+        .library(name: "AcmeCoCrashReporter", targets: ["AcmeCoCrashReporter"])
     ],
     targets: [
         .target(
-            name: "CrashReporter",
+            name: "AcmeCoCrashReporter",
             path: "",
             exclude: [
                 "Source/dwarf_opstream.hpp",
